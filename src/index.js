@@ -20,7 +20,7 @@ let breedsOptions = [];
 fetchBreeds()
   .then(data => {
     data.forEach(element => {
-        breedsOptions.push({ value: element.id, text: element.name });
+      breedsOptions.push({ value: element.id, text: element.name });
     });
     new SlimSelect({
       select: selector,
